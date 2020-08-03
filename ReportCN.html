@@ -37,10 +37,10 @@ table       { font-size: 100%; }
 <body >
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">自动化测试报告</h1>
-<p class='attribute'><strong>测试人员 : </strong> Findyou</p>
-<p class='attribute'><strong>开始时间 : </strong> 2017-12-30 11:47:00</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.001146</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 12，通过 6，失败 4，错误 2，通过率= 50.00%</p>
+<p class='attribute'><strong>测试人员 : </strong> 李杰</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-08-03 17:26:30</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.001000</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 12，通过 8，失败 4，通过率= 66.67%</p>
 
 <p class='description'></p>
 </div>
@@ -48,10 +48,10 @@ table       { font-size: 100%; }
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(4)'>概要{ 50.00% }</a>
-<a class="btn btn-success" href='javascript:showCase(0)'>通过{ 6 }</a>
+<a class="btn btn-primary" href='javascript:showCase(4)'>概要{ 66.67% }</a>
+<a class="btn btn-success" href='javascript:showCase(0)'>通过{ 8 }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 4 }</a>
-<a class="btn btn-warning" href='javascript:showCase(2)'>错误{ 2 }</a>
+<a class="btn btn-warning" href='javascript:showCase(2)'>错误{ 0 }</a>
 <a class="btn btn-info" href='javascript:showCase(3)'>所有{ 12 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
@@ -72,12 +72,12 @@ table       { font-size: 100%; }
     <td>详细</td>
 </tr>
 
-<tr class='warning'>
+<tr class='danger'>
     <td>MyTestCase</td>
     <td class="text-center">6</td>
+    <td class="text-center">4</td>
     <td class="text-center">2</td>
-    <td class="text-center">2</td>
-    <td class="text-center">2</td>
+    <td class="text-center">0</td>
     <td class="text-center"><a href="javascript:showClassDetail('c1',6)" class="detail" id='c1'>详细</a></td>
 </tr>
 
@@ -99,9 +99,9 @@ table       { font-size: 100%; }
     <pre>
     
 ft1_2: Traceback (most recent call last):
-  File "test_HTMLTestRunnerCN.py", line 21, in testCase2
+  File "C:/Users/jieli/PycharmProjects/HTMLTestRunnerCN/test_HTMLTestRunnerCN.py", line 21, in testCase2
     self.assertEqual(2,3,"testCase_Fail")
-AssertionError: testCase_Fail
+AssertionError: 2 != 3 : testCase_Fail
 
 
     </pre>
@@ -122,9 +122,9 @@ AssertionError: testCase_Fail
     <pre>
     
 ft1_3: Traceback (most recent call last):
-  File "test_HTMLTestRunnerCN.py", line 24, in testCase3
+  File "C:/Users/jieli/PycharmProjects/HTMLTestRunnerCN/test_HTMLTestRunnerCN.py", line 24, in testCase3
     self.assertEqual(2,5,"测试用例_不通过")
-AssertionError: 测试用例_不通过
+AssertionError: 2 != 5 : 测试用例_不通过
 
 
     </pre>
@@ -132,27 +132,9 @@ AssertionError: 测试用例_不通过
     </td>
 </tr>
 
-<tr id='et1_4' class='none'>
-    <td class='errorCase'><div class='testcase'>testCase4</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起output信息 -Findyou
-    <button id='btn_et1_4' type="button"  class="btn-xs collapsed" data-toggle="collapse" data-target='#div_et1_4'>错误</button>
-    <div id='div_et1_4' class="collapse">  -->
-
-    <!-- 默认展开output信息 -Findyou -->
-    <button id='btn_et1_4' type="button"  class="btn-xs" data-toggle="collapse" data-target='#div_et1_4'>错误</button>
-    <div id='div_et1_4' class="collapse in">
-    <pre>
-    
-et1_4: Traceback (most recent call last):
-  File "test_HTMLTestRunnerCN.py", line 28, in testCase4
-    testCase_Error
-NameError: global name 'testCase_Error' is not defined
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testCase4</div></td>
+    <td colspan='5' align='center'><button id='btn_pt1_4' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt1_4'>通过</button></td>
 </tr>
 
 <tr id='pt1_5' class='hiddenRow'>
@@ -160,27 +142,9 @@ NameError: global name 'testCase_Error' is not defined
     <td colspan='5' align='center'><button id='btn_pt1_5' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt1_5'>通过</button></td>
 </tr>
 
-<tr id='et1_6' class='none'>
-    <td class='errorCase'><div class='testcase'>testCase6</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起output信息 -Findyou
-    <button id='btn_et1_6' type="button"  class="btn-xs collapsed" data-toggle="collapse" data-target='#div_et1_6'>错误</button>
-    <div id='div_et1_6' class="collapse">  -->
-
-    <!-- 默认展开output信息 -Findyou -->
-    <button id='btn_et1_6' type="button"  class="btn-xs" data-toggle="collapse" data-target='#div_et1_6'>错误</button>
-    <div id='div_et1_6' class="collapse in">
-    <pre>
-    
-et1_6: Traceback (most recent call last):
-  File "test_HTMLTestRunnerCN.py", line 35, in testCase6
-    Findyou
-NameError: global name 'Findyou' is not defined
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testCase6</div></td>
+    <td colspan='5' align='center'><button id='btn_pt1_6' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt1_6'>通过</button></td>
 </tr>
 
 <tr class='danger'>
@@ -250,9 +214,9 @@ pt2_2: 测试打印日志～
     <pre>
     
 ft2_4: Traceback (most recent call last):
-  File "test_HTMLTestRunnerCN.py", line 56, in testCase4
+  File "C:/Users/jieli/PycharmProjects/HTMLTestRunnerCN/test_HTMLTestRunnerCN.py", line 56, in testCase4
     self.assertEqual(2, 1, "测试用例_不通过")
-AssertionError: 测试用例_不通过
+AssertionError: 2 != 1 : 测试用例_不通过
 
 
     </pre>
@@ -273,9 +237,9 @@ AssertionError: 测试用例_不通过
     <pre>
     
 ft2_5: Traceback (most recent call last):
-  File "test_HTMLTestRunnerCN.py", line 59, in testCase5
+  File "C:/Users/jieli/PycharmProjects/HTMLTestRunnerCN/test_HTMLTestRunnerCN.py", line 59, in testCase5
     self.assertEqual(2, 9, "测试用例_不通过")
-AssertionError: 测试用例_不通过
+AssertionError: 2 != 9 : 测试用例_不通过
 
 
     </pre>
@@ -291,10 +255,10 @@ AssertionError: 测试用例_不通过
 <tr id='total_row' class="text-center info">
     <td>总计</td>
     <td>12</td>
-    <td>6</td>
+    <td>8</td>
     <td>4</td>
-    <td>2</td>
-    <td>通过率：50.00%</td>
+    <td>0</td>
+    <td>通过率：66.67%</td>
 </tr>
 </table>
 

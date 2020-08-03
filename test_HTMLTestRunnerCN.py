@@ -25,14 +25,14 @@ class MyTestCase(unittest.TestCase):
 
     def testCase4(self):
         self.assertEqual(2,2,"testCase_Error")
-        testCase_Error
+        # testCase_Error
 
     def testCase5(self):
         pass
 
     def testCase6(self):
         self.assertEqual(2,2,"testCase_Error")
-        Findyou
+        # Findyou
 
 class APITestCase(unittest.TestCase):
     def setUp(self):
@@ -83,14 +83,14 @@ def Suite():
 
 if __name__ == '__main__':
     #确定生成报告的路径
-    filePath ='/Users/albert/PycharmProjects/HTMLTestRunnerCN/ReportCN.html'
+    filePath ='./ReportCN.html'
     fp = open(filePath,'wb')
     #生成报告的Title,描述
     runner = HTMLTestRunnerCN.HTMLTestReportCN(
         stream=fp,
         title='自动化测试报告',
         #description='详细测试用例结果',
-        tester='Findyou'
+        tester='李杰'
         )
     #运行测试用例
     runner.run(Suite())
