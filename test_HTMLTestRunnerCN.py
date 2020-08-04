@@ -83,7 +83,7 @@ def Suite():
 
 if __name__ == '__main__':
     #确定生成报告的路径
-    filePath ='./ReportCN.html'
+    filePath ='./Report/ReportCN.html'
     fp = open(filePath,'wb')
     #生成报告的Title,描述
     runner = HTMLTestRunnerCN.HTMLTestReportCN(
